@@ -1,0 +1,79 @@
+/* classify */
+
+#classify{
+		display: none;
+		width: 1000px;
+		height: 2000px;
+		/* position: relative; */
+		background: #eee;
+		margin: 0 auto;
+		z-index: 99;
+}
+
+/* #globalHeader{
+	display: none;
+}   使用js事件 点击后加入事件*/
+#classify #globalHeader{
+	display: block;
+	position: relative;
+}
+#classify_box{
+	/* background: red; */
+	height: 45px;
+	width: 1000px;
+	position: relative;
+	border-bottom: .5px solid #b2b2b2;
+	z-index: 50;
+	
+
+}
+#classify_title{
+	display: flex;
+	justify-content: space-between;
+
+}
+#classify_title a{
+	z-index: 999;
+	/* background: #f9f9f9; */
+	height: 45px;
+
+}/*若不加这句话，a标签会被下面图层遮挡，导致无法点击*/
+#classify_title a img{
+	height: 41px;
+}
+#classify_title h1{
+	font-size: 18px;
+    color: #000;
+    font-weight: 900;
+	line-height: 45px;
+	z-index: 99;
+	background: #f9f9f9;
+	width: 940px;
+	text-align: center;
+	height: 42px;
+}
+#classify_title .icon-gouwuche{
+	font-size: 30px;
+	line-height: 45px;
+	/* margin-right: 10px; */
+	background: #f9f9f9;
+	height: 41px;
+	padding-right: 20px;
+	position: relative;
+	/* right: -10px; */
+}
+#classify_content{
+	position: relative;
+	top: -93px;
+}
+#line{
+	width: 1000px;
+	height: 1px;
+	background: #b2b2b2;
+	z-index: 99;
+	position: relative;
+	top: -4px;
+}
+#product{
+	top: 50px;
+}

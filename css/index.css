@@ -1,0 +1,465 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+dl,
+dd,
+p,
+input,
+select,
+textarea,
+td,
+tr {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "微软雅黑";
+
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+body {
+	height: 100%;
+}
+
+img {
+	border: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* header */
+header {
+	height: 70px;
+	width: 100%;
+	/* background: oldlace; */
+	position: relative;
+	
+
+}
+
+header h1 img {
+	width: 130px;
+	height: 20px;
+	float: left;
+	margin-top: 25px;
+	margin-right: 20px;
+
+}
+
+#globalHeader .headerWrap {
+	width: 1024px;
+	height: 70px;
+	margin: 0 auto;
+	/* background: pink; */
+}
+
+nav li {
+	/* 	width: 72px; */
+	height: 70px;
+	float: left;
+	padding: 26px 10px;
+	font-size: 13px;
+	text-align: center;
+	box-sizing: border-box;
+	
+}
+
+nav a {
+	color: #666;
+
+}
+
+.search {
+	position: relative;
+	top:20px;
+	width: 40px;
+	height: 30px;
+	border-radius: 20px;
+	/* background: url(../imges/icon_search_b.png) no-repeat 10px center rgba(0, 0, 0, .05); */
+	background-size: 16px;	
+	float: right;
+	/* overflow: hidden; */
+
+	
+
+
+}
+
+.search input {
+	position: absolute;	
+	width: 200px;
+	height: 30px;
+	border-radius: 20px;
+	border: none;
+	background: url(../imges/icon_search_b.png) no-repeat 10px center rgba(0, 0, 0, .05);
+	/* background-color: #fff; */
+	background-size: 16px;
+	box-sizing: border-box;
+	background-color: #fff;
+	/* display: none; */
+
+}
+/* input:focus::-webkit-input-placeholder { color:transparent; } */
+.headerWrap nav ul li a:hover{
+	color: #999;
+}
+/* section */
+
+.banner {
+	display: block;
+	/* width: 1024px; */
+	margin: 0 auto;
+	box-sizing: border-box;
+	/* background: red; */
+	position: relative;
+	top: -70px;
+}
+
+.banner img {
+	width: 1024px;
+	height: auto;
+	display: block;
+}
+
+/* fourPannels */
+.fourPannels {
+	width: 1024px;
+	margin: auto;
+	box-sizing: border-box;
+	font-size: 14px;
+	position: relative;
+	top: 70px;
+}
+
+.fourPannels .pannels {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.fourPannels .pannels li {
+	width: 25%;
+	padding-top: 16px;
+	padding-bottom: 16px;
+
+	padding-right: 16px;
+}
+
+.fourPannels .pannels img {
+	width: 244px;
+	height: auto;
+}
+
+.pannels .title {
+	position: relative;
+	bottom: 50px;
+	left: 10px;
+	z-index: 2;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+	font-weight: bold;
+	width: 90%;
+	color: #fff;
+
+}
+
+.pannels .title2 {
+	position: relative;
+	bottom: 34px;
+	left: 10px;
+	z-index: 2;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+	font-weight: bold;
+	width: 90%;
+	color: #fff;
+
+}
+
+.more {
+	width: 1024px;
+	margin: 0 auto;
+	position: relative;
+	top: 40px;
+}
+
+.more a {
+	font-size: 14px;
+	float: right;
+	color: #666;
+}
+
+/* product */
+#product {
+	width: 1024px;
+	margin: 0 auto;
+
+
+}
+
+.h1Text h1 {
+	margin-top: 50px;
+	font-size: 18px;
+	color: #333;
+}
+
+.h1Text h1 span {
+	font-size: 14px;
+	float: right;
+	font-weight: 100;
+
+}
+
+.h1Text h1 span a {
+	color: #666;
+
+}
+
+#product_garment {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 15px;
+	margin-top: 15px;
+
+
+}
+
+#product_garment li {
+	/* background: #FF0000; */
+	width: 15%;
+	border-radius: 4px;
+	box-sizing: border-box;
+	padding: 8px;
+}
+
+#product_garment li img {
+	width: 40px;
+
+}
+
+#product_garment li a span {
+	font-size: 12px;
+	margin-left: 8px;
+	color: #666;
+	position: relative;
+	top: -13px;
+}
+
+/* newItem */
+#newItem {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+#newItem_wrap {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
+	margin-bottom: 15px;
+
+
+}
+
+#newItem_wrap li {
+	width: 15%;
+	/* 	margin-right: 2%; */
+	/* background: red; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* 	margin-bottom: 15px; */
+	padding: 15px 15px 15px 15px;
+	box-sizing: border-box;
+}
+
+#newItem_wrap li img {
+	width: 123.6px;
+}
+
+#newItem_wrap span {
+	font-size: 12px;
+	color: #666;
+	position: relative;
+	bottom: -16px;
+	left: -13px;
+}
+
+/* service */
+#service {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+#service ul {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
+	margin-bottom: 15px;
+
+}
+
+#service ul li {
+	width: 32%;
+}
+
+#service ul img {
+	width: 327px;
+	height: 204px;
+}
+
+#service ul span {
+	position: relative;
+	bottom: 35px;
+	left: 10px;
+	z-index: 2;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+	font-weight: bold;
+	width: 90%;
+	color: #fff;
+}
+
+#news {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+#news ul {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#news ul li {
+	margin-bottom: 10px;
+	/* 	background: red; */
+	padding-bottom: 5px;
+}
+
+#news ul span {
+	display: block;
+	margin-bottom: 5px;
+	font-size: small;
+	color: #999;
+}
+
+#news ul a {
+	color: #666;
+}
+
+/* aside */
+#misc {
+	width: 100%;
+	padding: 15px 0;
+	background: #ebebeb;
+}
+
+.content {
+	width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.content ul {
+	display: flex;
+}
+
+.content ul li {
+	margin-right: 10px;
+	position: relative;
+	top: 5px
+}
+
+.content li img {
+	width: auto;
+	height: 25px;
+}
+
+.content .passport img {
+	width: auto;
+	height: 25px;
+	position: relative;
+	top: 5px;
+}
+
+/* footer */
+footer {
+	font-size: 12px;
+	padding: 0;
+	background: #000;
+	line-height: 1;
+	width: 100%;
+	height: 390px;
+}
+
+#footerNav {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+#footerNav ul {
+	padding-top: 0px;
+	padding-bottom: 32px;
+	height: 32px;
+	border-bottom: 1px solid #888;
+	width: 100%;
+	display: flex;
+/* 	background: red; */
+
+}
+#footerNav ul li{
+    padding-right: 20px;
+    box-sizing: border-box;
+	position: relative;
+	left: 0px;
+}
+#footerNav ul li a{
+	color: #e7e7e7;
+}
+.footerNav5 img{
+	width: 18px;s
+	height: 12px;
+	margin-right: 8px;
+	vertical-align: middle;
+
+}
+#footerNav .footerNav5 ul{
+	border:0;
+
+}
+.another{
+	width: 1024px;
+	margin: 0 auto;
+	height: 40px;
+}
+.another ul li{
+	float: left;
+	padding-right: 13px;
+	color: #888888;
+	font-size: 9px;
+}
+
+.another ul li a:last-child{
+	padding-right: 0;
+	padding-left: 0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 9px;
+}
+.another ul li:last-child{
+	position: relative;
+	top: -5px;
+}

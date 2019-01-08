@@ -17,7 +17,7 @@
 
 	//3、执行SQL语句（传输数据）
 	//3.1 查询
-	$sqlstr="select * from login where myphone='$myphone' ";
+	$sqlstr="select * from login where myphone='$myphone'";
 	$result = mysql_query($sqlstr,$conn);
 
 	if(mysql_num_rows($result)>0){
@@ -26,9 +26,7 @@
 		
 		echo "该账号已经被使用";
 	}else{
-		$sqlstr="insert into login values('$myphone',$verification_code)";
-		
-
+		$sqlstr="insert into login  values('$myphone','$verification_code')";
 		$result = mysql_query($sqlstr,$conn);
 
 		//4、关闭数据库（过河拆桥）

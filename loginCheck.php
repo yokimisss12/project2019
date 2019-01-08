@@ -2,8 +2,8 @@
 	header("Content-type:text/html;charset=utf-8");
 
 	//一、获取用户的输入
-	$phone = $_POST['myphone'];
-	$password = $_POST['passwords'];
+	$myphone = $_POST['myphone'];
+	$passwords = $_POST['passwords'];
 	//二、处理
 
 	//1、建立连接（搭桥）
@@ -15,7 +15,7 @@
 	mysql_select_db("muji",$conn);
 
 	//3、执行SQL语句（传输数据）
-	$sqlstr="select * from login where myphone='$phone' and password='$password'";
+	$sqlstr="select * from login where myphone='$myphone' and password='$passwords'";
 									
 
 	$result = mysql_query($sqlstr,$conn);//结果是个表格

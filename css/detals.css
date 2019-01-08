@@ -1,0 +1,140 @@
+#menu{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+#search_pic img{
+	width: 36px;
+	height: 36px;
+	position: relative;
+	margin-left: 10px;
+	top:-6px
+}
+.swiper-container {
+	position: relative;
+    width: 600px;
+    height: 415px;
+	background: red;
+	top: 70px;
+} 
+.swiper-slide{
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	
+}
+.swiper-slide img{
+	width: 414px;
+	height: 415px;
+	position: relative;
+	top: -50px;
+} 
+.swiper-button-prev img{
+	position: relative;
+	top: -70px;
+}
+.swiper-button-next img{
+	position: relative;
+	top: -70px;
+}
+.swiper-pagination{
+	top: 340px;
+	height: 30px;
+	color: #999;
+	/* background-color: pink; */
+}
+.swiper-pagination span{
+	background: #585858;
+}
+/* product */
+
+
+#product{
+	width: 1000px;
+	height: 100px;
+	background-color: #fff;
+	position: relative;
+	z-index: 999;
+	
+}
+#text{
+	text-align: center;
+}
+#text h1{
+	font-size: 14px;
+	color: #000000;
+	line-height: 21px;
+	font-weight: 100;
+}
+#text h2{
+	font-size: 18px;
+	color: #7f0019;
+	
+}
+#text h2 span{
+	color: #999999;
+	text-decoration: line-through;
+}
+#product .product_details{
+	/* height: 87px; */
+	/* width: 980px; */
+	background: #f2f2f2;
+	font-size: 13px;
+	line-height: 20px;
+	padding: 10px;
+}
+#product p:first-child{
+	margin-bottom: 5px;
+}
+
+/* Product parameters */
+#parameters{
+	width: 980px;
+	height: 50px;
+	background: bisque;
+	position: relative;
+	top: 70px;
+	margin: 0 auto;
+	line-height: 50px;
+	padding-left: 20px;
+	color: #666;
+	display: block;
+	border-bottom: 5px solid #f2f2f2;
+}
+
+
+
+/* bottom_btns */
+#bottom_btns{
+	width: 1000px;
+	margin: 0 auto;
+
+	background: pink;
+	height: 51px;
+	position: fixed;
+	bottom: 0px;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+}
+#bottom_btns img{
+	display: block;
+	margin-left: 20px;
+	float: left;
+}
+#bottom_btns button{
+	border: 0;
+	width: 45%;
+    min-height: 44px;
+    border: 0 solid rgba(0,0,0,0);
+    background: #7f0019;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 22px;
+    border-radius: 22px;
+    cursor: pointer;
+	margin-left: 15px;
+	margin-top: 3px;
+	
+}
