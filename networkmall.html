@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
-		<link rel="stylesheet" type="text/css" href="css/index2.css" />
+		<link rel="stylesheet" type="text/css" href="css/index2.css?p=4" />
 		<link rel="stylesheet" type="text/css" href="font/iconfont.css">
 		<link rel="stylesheet" type="text/css" href="css/classify.css" />
 		<link rel="stylesheet" type="text/css" href="css/searchBox.css" />
@@ -43,28 +43,52 @@
 			<div id="menuBox">
 				<div id="menu">
 					<a href="#">
-						<div class="iconfont icon-sousuo"></div>
+						<div class="iconfont icon-sousuo" style="position: absolute; right: 360px;"></div>
 					</a>
 					<a href="#">
-						<div class="iconfont icon-fenlei"></div>
+						<div class="iconfont icon-fenlei " style="position: absolute; right: 305px;"></div>
 					</a>
 					<a href="#">
-						<div class="iconfont icon-xiaoxiduihuaxinxi"></div>
+						<div class="iconfont icon-xiaoxiduihuaxinxi" style="position: absolute; right: 255px;"></div>
 					</a>
 					<a href="#">
-						<div class="iconfont icon-gouwuche"></div>
+						<div class="iconfont icon-gouwuche" style="position: absolute; right: 205px;"></div>
 					</a>
-					<a href="#" id="app">下载移动端 App</a>
+					<div href="#" id="app" style="  position: absolute;
+													right: 105px;
+													width: 73px;
+													background: red;
+													height: 36px;
+													top: 5px;">
+						<a href="#"><img src="imges/code.png" id="app_pic" style="width: 100px;
+																	right: -14px;
+																	position: absolute;
+																	top: 39px;
+																	display: none;
+																	"></a>
+						<span id="app_text" style="font-size: 10px;
+									line-height: 26px;
+									color: #7f0019;
+									z-index: 2;
+									position: absolute;
+									right: 0x;
+									cursor: pointer;
+									width: 73px;">下载移动端 App</span>
+						</div>
 					<a href="#" id="login">登录 / 注册</a>
+			
+
 					<div href="user_box">
-						<a href="#" id="user_img"><img src="imges/person.png" alt=""></a>
+						<a href="#" id="user_img"><img src="imges/person.png" alt="" style="display: none; "></a>
 						<div id="boxx" style="width: 50px;
 												height: 50px;
-												
+												z-index: 9999999;
 												position: absolute;
 												right: 24px;
 												top: 0px;
-												opacity: 1;">
+												opacity: 1;
+												cursor: pointer;
+												display: none;">
 							<div id="divbox1" style="width: 0px; height: 0px; position: relative; border: 12px solid transparent; border-bottom-color: #b2b2b2;"></div>
 							<div id="divbox" style="width: 0px; height: 0px; position: absolute; border: 10px solid transparent; border-bottom-color: #fff;"></div>
 							<div id="accountbox">
@@ -376,7 +400,7 @@
 				<img src="imges/unvisible.jpg" id="unvisible" />
 				<img src="imges/visible.jpg" id="visible">
 				<input type="password" id="passwords" style="padding-left:40px;" name="password" placeholder="输入密码" />
-				<input type="submit" id="submitbtn" name="submit" value="登录" />
+				<input type="button" id="submitbtn" name="submit" value="登录" />
 				<!-- </form> -->
 				<div id="login_pro">
 					<a id="newperson">新用户注册</a>
@@ -404,5 +428,6 @@
 	</body>
 	<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src="js/swiper.min.js"></script>
-	<script type="text/javascript" src="js/net.js"></script>
+	<script type="text/javascript" src="js/net.js?p=1"></script>
 	<script type="text/javascript" src="js/cookieTools.js"></script>
+	

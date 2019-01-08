@@ -52,6 +52,17 @@ $(function() {
 				$("#classify").css("display", "none");
 				$('body').css('overflow', 'visible');
 			})
+				
+				//app//
+
+				
+		
+
+
+
+
+
+
 
 			//login//
 
@@ -74,7 +85,7 @@ $(function() {
 			})
 
 			$("#close").click(function() {
-				$("#mainPage").css("display", "block");
+				$("#mainPage").css("display", "block"); 
 				$("#loginBox").animate({
 					"top": "750px"
 				}, 300, function() {
@@ -85,42 +96,74 @@ $(function() {
 					$('body').css('overflow', 'visible');
 				})
 			})
+			
+			$("#login").click(function(){
+				$("#loginBox").css({
+									"display": "block",
+									"z-index": 999
+								})
+								// $("#mainPage").css("display", "none");
+								$('body').css('overflow', 'hidden');
+				
+				
+								$("#loginBox").animate({
+									"top": "-620px",
+								}, 300, function() {
+									$("#login_service").css("display", "block");
+									$("#mainPage").css("display", "none");
+				
+								})
+			})
+			
 		})
-		
+		$(function(){
+						// 从cookie中获取用户名
+						
+				let $myphone=getCookie("myphone");
+				if($myphone){
+					$("#login").css("display","none");
+					$("#user_img img").css("display","block");
+					$("#boxx").css("display","block");
+				// alert($myphone)
+				}
+				
+				$("#account").click(function(){
+					window.location.href = "myAccount.html"
+				})
+				
+		})
+
 	
 		$(function() {
 			$("#submitbtn").click(function() {
-
-				$("#myphone").val(function() {
-					var reg = /^1\d{10}$/;
-					console.log("$('#myphone').val()")
-					if (reg.test(this.value)) {
-						console.log("正确");
-					} else {
-						alert("手机号码格式错误")
-					}
-					
-
-				})
-				
-				
-				$("#passwords").val(function() {
-					var reg = /\w{2,}/;
-					if (reg.test(this.value)) {
-						console.log("正确");
-					} else {
-						alert("密码格式错误");
-					}
-				})
-				
-				
 				
 					var $myphone = $("#myphone").val();
 					var $passwords=$("#passwords").val();
+					var reg=/^1\d{10}$/;
+						
+						if($myphone==""){
+							alert("请输入用户名");
+						}else if(reg.test($myphone)){
+							console.log("正确");
+						}else{
+							alert("手机号码格式错误");
+							return;
+						}
+
+						var reg=/\w{3,12}/;
+					
+						if($passwords==""){
+							alert("请输入密码");
+						}else if(reg.test($passwords)){
+							console.log("正确");
+						}else{
+							alert("密码不正确");
+							return;
+						}
 					$.ajax({
 						type:"post",
 						url:"loginCheck.php",
-						data: {
+						data: { 
 							myphone:$myphone,
 							passwords:$passwords
 						},
@@ -128,15 +171,16 @@ $(function() {
 							if(xhr==1){
 								alert("登陆成功！")
 								saveCookie("myphone",$("#myphone").val(),7)
-								window.location.href = "Network mall.html";
+								window.location.href = "networkmall.html";
+						
 							}else{
 								alert("登录失败");
-								
+								return;
 							}
 						}
 					})
-				
-				
+				 
+				   
 				})
 				
 })
@@ -155,12 +199,23 @@ $(function() {
 				$("#boxx").children().show("normal");
 			})
 			
+// 		$("#app_text").mouseleave(function(){
+// 					$("#app_pic").hide("normal");
+// 			})
+// 			$("#app_text").mouseenter(function(){
+// 					$("#app_pic").show("normal");
+// 			})
+// 
+			$("#app").mouseover(function(){
+				$("#app_pic").css("display","block")
+			})
+			$("#app").mouseout(function(){
+				$("#app_pic").css("display","n")
+			})
 
 			
 		})
 
-
-	
 
 
 
